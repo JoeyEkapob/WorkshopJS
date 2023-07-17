@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap'); /* เเอด font มาใช้ */
+*{
+    box-sizing: border-box; /* ร่วมความยาวของ padding กับวัตถุขนาดของวัถตุเพื่อไม่ให้เวลากับ padding เเล้วมีความยากเกินค่าที่กำหนด */
+    font-family: 'Kanit', sans-serif;
+
+}
+body{
+    background-color: #f4f4f4F4;
+    display: flex;   /* กำหนด flex เปงเเนวนอน */
+    flex-direction: column; /* กำหนดต่อ flex เปงเเนวตั้ง */
+    align-items:center; /* ไอเทมทั้งหมดอยู้ตรงกลาง */
+    justify-content: center; /* ให้ทั้งหมดอยู่ตรงกลางของเว็บไซด์ */
+    height: 100vh;   /* ให้้เว็บให้มีความสูงอยู่ที่ 100vh  */
+    margin: 0; /* ไม่มีขอบ */
+    padding: 20px;
+}
+.btn{
+    color:#f4f4f4F4;
+    background-color: orange;
+    cursor: pointer; /* ชี้เปงรูปมือ */
+    border-radius: 10px; /* ตัดมุมขอบ */
+    font-size: 12px;
+    padding: 5px 10px;
+
+    
+}.money-img{
+    width: 250px;
+}
+.currency{
+   /*  border-style:double;
+    border-width: 10px; */
+    padding: 30px 0px;
+    display: flex; 
+    align-items: center; 
+    justify-content:space-between; 
+}
+.currency select{
+    padding: 8px 20px 8px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background-color: transparent;
+    appearance: none;
+    outline: 0; /* //เอาเส้นขอบออก */
+    /* text-align: ce; */
+
+}
+.currency input{
+    outline: 0;
+    border: 0px;
+    padding: 8px 20px 8px 10px;
+    text-align: right;
+    font-size: 25px;
+    background-color: transparent;
+    appearance: none;
+}
+.swap-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}.rate{
+    font-size: 20px;
+    padding: 10px 0px; /* สูง กว้าง */
+
+}.datatext{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
