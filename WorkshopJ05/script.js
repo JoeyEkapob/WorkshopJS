@@ -18,7 +18,8 @@ let timeradom = 0
 let  saveMode = localStorage.getItem('mode') !== null ? localStorage.getItem('mode') : 'medium';
 
 let level = 'medium'
- const timedown = setInterval(updetetime,1000) 
+
+const timedown = setInterval(updetetime,1000) 
 
 
 
@@ -98,6 +99,8 @@ text.addEventListener('input',(e)=>{
         e.target.value ='';
     }
 }) 
+
+
 function updatascore(){
 
     if(saveMode == 'easy'){
@@ -115,6 +118,7 @@ function updatascore(){
     scoreEl.innerHTML = score;
 
 }
+
 function updetetime(){
     timeradom --;
     time.innerHTML = timeradom
@@ -123,6 +127,7 @@ function updetetime(){
         gamecomplece()
     }
 }
+
 function gamecomplece(){
     gameover.innerHTML=`<h1>จบเกมเเล้วนะครับ</h1>
     <p>คะเเนนของคุณ = ${score}</p>
@@ -130,6 +135,7 @@ function gamecomplece(){
     gameover.style.display="flex"
 
 }
+
 function regame(){
    location.reload()
 }
@@ -137,8 +143,6 @@ function regame(){
 levelbtn.addEventListener('click',()=>{
     settings.classList.toggle('hide');
 })
-
-
 
 levelel.addEventListener('change',(e)=>{
     //console.log(e.target.value)
