@@ -3,7 +3,6 @@ const search= document.getElementById('search');
 const result=document.getElementById('result');
 const more=document.getElementById('more');
 
-
 const apiURL="https://api.lyrics.ovh/";
 
 form.addEventListener('submit',e=>{
